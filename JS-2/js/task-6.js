@@ -1,19 +1,20 @@
 "use strict";
 let input;
-const numbers = [];
+let numbers = [];
 let total = 0;
-
-input = Number(prompt("please, insert a number!"));
-const koleso = function(input) {
-  for (let i = 0; i < input.length; i += 1) {
-    let input = 0;
-    if(input === null){
-    input += numbers.push();
-  }
-  console.log(input);
+while (input !== null) {
+input = prompt('Введите любое число ', '');
+numbers.push(Number(input));
 }
-};
-koleso(input);
+for (const number of numbers) {
+ if (number !== null) {
+   total += number;
+ }
+}
+console.log (numbers);
+console.log (`Общая сумма чисел равна ${total}`);
+
+
 
 
 

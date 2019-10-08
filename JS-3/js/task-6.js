@@ -9,14 +9,15 @@ const products = [
 
 function calculateTotalPrice(arr, productName) {
   let massive = [];
-  for (let i = 0; i < arr.length; i += 1) {
-    let total = 0;
-    massive.push(arr[i][productName]);
-    console.log(arr[i][productName]);
-    total += products("price");
+let total = 0;
+for (const mass of arr){
+  if(productName === mass.name){
+    total = mass.price * mass.quantity;
   }
 }
-calculateTotalPrice(arr, productName);
+  return total; 
+}
+
 
 // Напиши функцию calculateTotalPrice(arr, productName),
 // которая получает массив объектов и имя продукта (значение свойства name).
@@ -32,3 +33,19 @@ calculateTotalPrice(arr, productName);
 // ];
 console.log(calculateTotalPrice(products, "Радар")); // 5200
 console.log(calculateTotalPrice(products, "Дроид")); // 2800
+
+// function calculateTotalPrice(arr, productName) {
+  
+//   let total = 0;
+  
+//   for (const mass of arr){
+    
+//     const {name, price, quantity} = mass;
+    
+//     if(productName === name){
+//       total = price * quantity;
+//     }
+//   }
+  
+//     return total; 
+//   }
