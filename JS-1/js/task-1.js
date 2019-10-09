@@ -1,10 +1,11 @@
-'use strict';
-const name = 'название: Генератор защитного поля';
-let price = 'цена: 1000';
-console.log(name);
-console.log(price);
-let sameMessage = 'Выбран "Генератор защитного поля", цена за штуку 1000 кредитов';
-console.log(sameMessage);
-price = 'цена: 2000';
-sameMessage = 'Выбран "Генератор защитного поля", цена за штуку 2000 кредитов';
+"use strict";
+const name = "Генератор защитного поля";
+let price = "1000";
+console.log(`Выбран ${name}, цена за штуку ${price} кредитов`);
+
+// console.log(price);
+let sameMessage = `Выбран ${name}, ${price} 1000 кредитов`;
+// console.log(sameMessage);
+price = 2000;
+sameMessage = `Выбран ${name}, цена за штуку ${price} кредитов`;
 console.log(sameMessage);
