@@ -12,7 +12,7 @@ const calculateTotalPrice = function(products, prop) {
 
   for (let item of products) {
     const { name, price, quantity } = item;
-    if (prop === item.name) {
+    if (prop === name) {
       total = price * quantity;
     }
   }

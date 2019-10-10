@@ -1,27 +1,17 @@
 "use strict";
+let bestWorker;
 
-const workers = {
-  pit: 30,
-  sasha: 17,
-  david: 41,
-  olha: 23
-};
-
-function findBestEmployee(workers) {
-  const keys = Object.keys(workers);
-  let worker = 0;
-  let name;
-  for (const user of keys) {
-    if (worker < workers[user]) {
-      worker = workers[user];
-      name = user;
+function findBestEmployee(employees) {
+  let quantity = 0;
+  for (let worker in employees) {
+    if (quantity < employees[worker]) {
+      quantity = employees[worker];
+      bestWorker = worker;
     }
   }
-  console.log(name, workers[name]);
-
-  return name;
+  console.log(bestWorker, quantity);
+  return bestWorker;
 }
-findBestEmployee(workers);
 
 // Напиши функцию findBestEmployee(employees),
 // которая принимает объект сотрудников и возвращает имя самого

@@ -1,20 +1,14 @@
 "use strict";
-const koleso = {
-  sasha: 5,
-  olha: 7,
-  makar: 9,
-  ivan: 4
-};
 
-function countTotalSalary(koleso) {
-  const users = Object.values(koleso);
+function countTotalSalary(employees) {
+  const users = Object.values(employees);
   let total = 0;
   for (const user of users) {
     total += user;
   }
-  return console.log(`total: ${total}`);
+  return total;
 }
-countTotalSalary(koleso);
+
 
 // Напиши функцию countTotalSalary(employees) принимающую объект зарплат.
 // Функция считает общую сумму запрплаты работников и возращает ее
