@@ -24,7 +24,7 @@ const images = [
 const list = document.querySelector("#gallery");
 let imgStr = "";
 images.forEach(el => {
-//   const images = document.createElement("img");
+  //   const images = document.createElement("img");
   //    img.src = el.url;
   imgStr += `<li><img src= ${el.url} alt=${el.alt}></li>`;
 });
