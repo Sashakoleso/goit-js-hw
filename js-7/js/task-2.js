@@ -17,14 +17,6 @@ const ingredients = [
 // const ulElement = document.querySelector("#ingredients");
 // const fragment = document.createDocumentFragment();
 
-// ingredients.forEach(el => {
-//   const li = document.createElement("li");
-//   li.textContent = el;
-//   fragment.append(li);
-//   console.log(li);
-// });
-// ulElement.appendChild(fragment);
-
 let sum;
 sum = ingredients.forEach(el => {
   sum += `<li> ${el} </li>`;
