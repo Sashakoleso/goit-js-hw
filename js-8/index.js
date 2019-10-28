@@ -1,5 +1,5 @@
-import gallery from './gallery-items.js'
-console.log('gallery :', gallery);
+import gallery from "./gallery-items.js";
+console.log("gallery :", gallery);
 
 const ul = document.querySelector(".gallery");
 const lightbox = document.querySelector(".lightbox");
@@ -24,7 +24,6 @@ ul.addEventListener("click", e => {
     const img = document.querySelector(".lightbox___image");
     img.src = e.target.dataset.source;
     img.setAttribute("alt", e.target.getAttribute("alt"));
-    // img.src = e.target.setAttribute(data-source);
   }
 });
 
@@ -33,4 +32,3 @@ lightbox.addEventListener("click", e => {
     lightbox.classList.remove("is-open");
   }
 });
-
