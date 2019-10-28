@@ -1,11 +1,12 @@
-import menuData from './menuData.js';
+import menuData from './menuDat.json';
 import menu from '../templates/menu.hbs';
 
-const markMenu = menu(menuData);
-const menues = document.querySelector('#menu');
-const body = document.querySelector('body');
-const input = document.querySelector('.switch__input');
-const theme = { LIGHT: 'light-theme', DARK: 'dark-theme' };
+const markMenu = menu(menuData),
+  menues = document.querySelector('#menu'),
+  body = document.querySelector('body'),
+  input = document.querySelector('.switch__input'),
+  theme = { LIGHT: 'light-theme', DARK: 'dark-theme' };
+
 menues.insertAdjacentHTML('afterbegin', markMenu);
 
 input.addEventListener('input', changeTheme);
